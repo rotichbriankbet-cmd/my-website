@@ -1,313 +1,188 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Brian's Portfolio</title>
+<title>Brian's Blog & Business Hub</title>
+<p>👋 Hello and welcome to my website. Feel free to explore my blog, services and contact me anytime.</p>
+<style>
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #f4f4f4;
-    }
-
-    header {
-      background: #2563eb;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-
-    nav {
-      background: #1e40af;
-      padding: 10px;
-      text-align: center;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-      font-size: 18px;
-    }
-
-    nav a:hover {
-      color: yellow;
-    }
-
-    main {
-  max-width: 900px;
-  width: 90%;
-  margin: auto;
-  padding: 20px;
+body{
+font-family:Arial,sans-serif;
+margin:0;
+padding:0;
+text-align:center;
 }
 
-    .card {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      margin-bottom: 20px;
-    }
-
-    @media (max-width: 600px) {
-
-  nav a {
-    display: block;
-    margin: 10px 0;
-  }
-
-  header h1 {
-    font-size: 28px;
-  }
-
-  main {
-    width: 95%;
-  }
-
+header{
+padding:30px;
 }
 
-    footer {
-      background: #222;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 50px;
-    }
-    .profile-pic {
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto 20px;
-}
-.hero {
-  text-align: center;
+header img{
+width:180px;
+height:180px;
+border-radius:50%;
+object-fit:cover;
 }
 
-.hero h1 {
-  font-size: 40px;
+nav{
+padding:15px;
 }
 
-.hero h3 {
-  color: #2563eb;
-}
-h2{
-  color:#2563eb;
-}
-.skill-bar {
-  width: 100%;
-  height: 15px;
-  background: #ddd;
-  border-radius: 20px;
-  margin-bottom: 20px;
+nav a{
+text-decoration:none;
+margin:0 15px;
+font-weight:bold;
+font-size:18px;
 }
 
-.skill {
-  height: 100%;
-  border-radius: 20px;
+section{
+padding:40px 20px;
 }
 
-.html {
-  width: 85%;
-  background: #2563eb;
+footer{
+padding:20px;
+}
+.whatsapp-btn{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px 18px;
+border-radius:50%;
+text-decoration:none;
+font-size:25px;
+box-shadow:0 4px 10px rgba(0,0,0,0.3);
 }
 
-.css {
-  width: 75%;
-  background: #2563eb;
+.dark-mode{
+background:#121212;
+color:white;
 }
 
-.js {
-  width: 50%;
-  background: #2563eb;
-}
-p{
-  line-height:1.6;
-}
-.hero-btn {
-  display: inline-block;
-  background: #2563eb;
-  color: white;
-  text-decoration: none;
-  padding: 12px 20px;
-  border-radius: 8px;
-  font-weight: bold;
-  margin-top: 10px;
-}
-nav {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-.hero-btn:hover {
-  background: #1e40af;
-}
-.dark-btn {
-  padding: 12px 20px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: bold;
+.dark-mode a{
+color:#4da6ff;
 }
 
-.dark-mode {
-  background: #121212;
-  color: white;
+#darkBtn{
+position:fixed;
+top:20px;
+right:20px;
+padding:10px 15px;
+cursor:pointer;
+border:none;
+border-radius:8px;
+font-size:16px;
 }
 
-.dark-mode .card {
-  background: #1e1e1e;
-}
+</style>
 
-.dark-mode nav {
-  background: #000;
-}
-
-.dark-mode footer {
-  background: #000;
-}
-  </style>
 </head>
 
+<button id="darkBtn">🌙 Dark Mode</button>
 <body>
 
-  <header>
-    <h1>Brian's Portfolio</h1>
-    <p>Welcome to Brian's website</p>
-  </header>
+<header>
 
-  <nav>
-  <a href="#">Home</a>
-  <a href="#">About Me</a>
-  <a href="#">Projects</a>
-  <a href="#">Skills</a>
-  <a href="#">Contact</a>
+<img src="Brian.jpeg" alt="Brian.jpeg">
+
+<h1>Brian's Blog & Business Hub</h1>
+
+<p>Technology • Blogging • Digital Services</p>
+
+</header>
+
+<nav>
+
+<a href="#home">Home</a>
+
+<a href="#about">About</a>
+
+<a href="#blog">Blog</a>
+
+<a href="#services">Services</a>
+
+<a href="#contact">Contact</a>
+
 </nav>
 
-  <main>
+<section id="home">
 
-    <div class="card">
+<h2>Welcome</h2>
 
-  <h2>👋 Welcome</h2>
+<p>Welcome to my website where I share ideas, projects and digital services.</p>
 
-  <p>Hello! Welcome to my portfolio website.</p>
+</section>
 
-  <p>I am Brian, an upcoming web developer passionate about technology and creating beautiful websites.</p>
+<section id="about">
 
-</div>
-an</h1>
-<div class="card hero">
+<h2>About Me</h2>
 
-  <h1>👋 Hello, I'm Brian</h1>
+<p>Hi, I'm Brian. I enjoy technology, creating websites and sharing useful information online.</p>
 
-  <h3>Beginner Web Developer</h3>
+</section>
 
-  <p>Building websites one step at a time.</p>
+<section id="blog">
 
-  <p><strong>Dream. Learn. Build. Improve.</strong></p>
+<h2>Blog</h2>
 
-  <a href="#" class="hero-btn">View My Projects</a>
-   <button onclick="toggleDarkMode()" class="dark-btn">
-  🌙 Dark Mode
-</button>
-</div>
+<p>I'll share technology tips, projects and my learning journey here.</p>
 
-  <!-- About Me -->
-  <div class="card">
+</section>
 
-    <img src="Brian.jpeg"
-         alt="Brian's Profile Picture"
-         class="profile-pic">
+<section id="services">
 
-    <h2>About Me</h2>
+<h2>Services</h2>
 
-<p><strong>Name:</strong> Brian</p>
+<p>Website creation</p>
 
-<p><strong>Role:</strong> Beginner Web Developer</p>
+<p>Technology support</p>
 
-<p><strong>Goal:</strong> To build beautiful websites and improve my technology skills.</p>
+<p>Digital solutions</p>
 
-  </div>
+</section>
 
-  <!-- My Projects -->
-  <div class="card">
+<section id="contact">
 
-    <h2>My Projects</h2>
+<h2>Say Hello 👋</h2>
 
-    <ul>
-      <li>🌐 Brian's Portfolio Website</li>
-      <li>📱 Mobile-Friendly Website</li>
-      <li>📝 Personal Blog Website</li>
-    </ul>
+<p>Email:
+<a href="mailto:rotichbriankbet@gmail.com">
+rotichbriankbet@gmail.com
+</a>
+</p>
 
-  <div class="card">
+<p>
+<a href="https://wa.me/254768402542" target="_blank">
+💬 Chat with me on WhatsApp
+</a>
+</p>
 
-  <h2>My Skills</h2>
+</section>
 
-  <p>HTML</p>
+<footer>
 
-  <div class="skill-bar">
-    <div class="skill html"></div>
-  </div>
-
-  <p>CSS</p>
-
-  <div class="skill-bar">
-    <div class="skill css"></div>
-  </div>
-
-  <p>JavaScript</p>
-
-  <div class="skill-bar">
-    <div class="skill js"></div>
-  </div>
-
-</div>
-
-</div>
-  <!-- Contact Me -->
-  <div class="card">
-
-    <h2>Contact Me</h2>
-
-    <p>Need a website for your business? Click below to chat with me on WhatsApp.</p>
-
-    <a class="whatsapp-btn"
-       href="https://wa.me/254768402542"
-       target="_blank">
-       Chat on WhatsApp
-    </a>
-
-    <br><br>
-
-    <button onclick="sayHello()">Say Hello</button>
-
-  </div>
-
-</main> 
-
-  <footer>
-
-  <p>© 2026 Brian's Portfolio</p>
-
-  <p>Built with ❤️ by Brian</p>
+<p>© 2026 Brian's Blog & Business Hub</p>
 
 </footer>
-  <script>
+<a
+class="whatsapp-btn"
+href="https://wa.me/254768402542"
+target="_blank">
 
-function sayHello() {
-  alert("Hello! Welcome to Brian's Portfolio.");
-}
+💬
 
-function toggleDarkMode() {
-  document.body.classList.toggle("dark-mode");
-}
+</a>
+<script>
+
+const darkBtn=document.getElementById("darkBtn");
+
+darkBtn.addEventListener("click",function(){
+
+document.body.classList.toggle("dark-mode");
+
+});
 
 </script>
-
 </body>
+
 </html>
