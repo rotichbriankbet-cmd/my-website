@@ -421,6 +421,53 @@ background:#222;
 color:white;
 
 }
+.stats-container{
+
+display:flex;
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+gap:20px;
+
+}
+
+.stat{
+
+padding:20px;
+
+width:150px;
+
+border-radius:15px;
+
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+
+text-align:center;
+
+}
+.card{
+  background:white;
+  color:black;
+  padding:20px;
+  margin:15px 0;
+  border-radius:15px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+body.dark-mode .card{
+  background:#222;
+  color:white;
+}
+#topBtn{
+  position:fixed;
+  bottom:20px;
+  left:20px;
+  padding:12px;
+  border:none;
+  border-radius:50%;
+  cursor:pointer;
+}
 
 </style>
 </head>
@@ -503,6 +550,7 @@ Turning ideas into beautiful websites.
 </div>
 
 </div>
+
 </section>
 
 <section id="projects">
@@ -553,6 +601,60 @@ Turning ideas into beautiful websites.
 </div>
 
 </section>
+<section id="stats">
+
+<h2>📈 My Stats</h2>
+
+<div class="stats-container">
+
+<div class="stat">
+
+<h3 id="projectsCount">0</h3>
+
+<p>Projects</p>
+
+</div>
+
+<div class="stat">
+
+<h3 id="clientsCount">0</h3>
+
+<p>Happy Clients</p>
+
+</div>
+
+<div class="stat">
+
+<h3 id="yearsCount">0</h3>
+
+<p>Years Learning</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+  <h2>My Projects</h2>
+
+  <div class="card">
+    <h3>🌐 Personal Portfolio</h3>
+    <p>A modern responsive website showcasing my skills and services.</p>
+  </div>
+
+  <div class="card">
+    <h3>📝 Blog Website</h3>
+    <p>A website where I share technology tips and articles.</p>
+  </div>
+
+  <div class="card">
+    <h3>💼 Business Website</h3>
+    <p>A professional website for promoting businesses online.</p>
+  </div>
+
+</section>
+
 <section id="contact">
   <h2>Contact</h2>
   <p>Email: rotichbriankbet@gmail.com</p>
@@ -660,6 +762,47 @@ alert("👋 Welcome to Brian's Website!");
 
 },2000);
 
+</script>
+<script>
+
+let project=0;
+let client=0;
+let year=0;
+
+const interval=setInterval(()=>{
+
+if(project<5){
+project++;
+document.getElementById("projectsCount").innerHTML=project;
+}
+
+if(client<10){
+client++;
+document.getElementById("clientsCount").innerHTML=client;
+}
+
+if(year<2){
+year++;
+document.getElementById("yearsCount").innerHTML=year;
+}
+
+if(project===5 && client===10 && year===2){
+
+clearInterval(interval);
+
+}
+
+},200);
+
+</script>
+<button onclick="topFunction()" id="topBtn">⬆️</button>
+<script>
+function topFunction(){
+  window.scrollTo({
+    top:0,
+    behavior:"smooth"
+  });
+}
 </script>
 </body>
 </html>
